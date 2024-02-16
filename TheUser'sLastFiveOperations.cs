@@ -49,7 +49,7 @@ namespace JSON
                     Console.WriteLine($"Date: {transaction.TransactionDate}, Type: {transaction.TransactionType}, Amount: {transaction.Amount}");
                 }
 
-                // Update the transaction history in each file with the current transactions
+                
                 foreach (string filePath in filePaths)
                 {
                     if (File.Exists(filePath))
@@ -57,7 +57,7 @@ namespace JSON
                         string jsonString = File.ReadAllText(filePath);
                         testclass testClass = JsonConvert.DeserializeObject<testclass>(jsonString);
 
-                        // Append new transactions to the existing transaction history
+                        
                         if (testClass.TransactionHistory == null)
                         {
                             testClass.TransactionHistory = new List<Transaction>();
