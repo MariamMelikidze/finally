@@ -33,3 +33,4 @@ C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net8.0\Ser
 C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net8.0\appsettings.json
+C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net8.0\JSON.sourcelink.json

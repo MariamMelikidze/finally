@@ -28,13 +28,13 @@ namespace JSON
                 string jsonString = File.ReadAllText(filePath);
                 testclass testClass = JsonConvert.DeserializeObject<testclass>(jsonString);
 
-                if (testClass.amount < withdrawalAmount)
+                if (testClass.Amount < withdrawalAmount)
                 {
                     Console.WriteLine("Insufficient balance for withdrawal.");
                     return;
                 }
 
-                // Create a new withdrawal transaction
+                
                 Transaction withdrawalTransaction = new Transaction
                 {
                     TransactionDate = DateTime.Now.ToString("yyyy-MM-dd"),
@@ -44,16 +44,13 @@ namespace JSON
                     AmountEUR = 0
                 };
 
-                // Add the withdrawal transaction to the transaction history list
+                
                 testClass.TransactionHistory.Add(withdrawalTransaction);
 
-                // Update the account balance
-                testClass.amount -= withdrawalAmount;
+                testClass.Amount -= withdrawalAmount;
 
-                // Serialize the updated testClass object back to JSON
                 string updatedJsonString = JsonConvert.SerializeObject(testClass, Formatting.Indented);
 
-                // Write the updated JSON string to the file
                 File.WriteAllText(filePath, updatedJsonString);
 
                 Console.WriteLine("Withdrawal successful.");

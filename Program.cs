@@ -103,15 +103,15 @@ internal class Program
 
         Console.WriteLine("You have been successfully verified!");
 
-        // Call MyMethod in Class1
+        
         Class1 class1Instance = new Class1();
         bool successfulVerification = true;
         class1Instance.MyMethod(successfulVerification);
 
-        // Add new transaction to the testclass object
+        
         AddTransaction();
 
-        // Serialize the testclass object back to JSON and write it to the file
+        
         try
         {
             string updatedJsonString = JsonConvert.SerializeObject(testClass, Formatting.Indented);
@@ -127,7 +127,7 @@ internal class Program
 
     static void AddTransaction()
     {
-        // Create a new Transaction object
+        
         Transaction newTransaction = new Transaction
         {
             TransactionDate = DateTime.Now.ToString("yyyy-MM-dd"),
@@ -137,7 +137,7 @@ internal class Program
             AmountEUR = 0
         };
 
-        // Add the new transaction to the transaction history list
+        
         testClass.TransactionHistory.Add(newTransaction);
     }
     static IHostBuilder CreateHostBuilder(string[] args) =>

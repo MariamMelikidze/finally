@@ -1,4 +1,4 @@
-﻿using JSON.JSON;
+﻿//using JSON.JSON;
 using Serilog;
 using Serilog.Events;
 
@@ -60,6 +60,7 @@ namespace JSON
                             };
                             TheUser_sLastFiveOperations.Last5OperationsForMultipleFiles(filePaths);
                             break;
+
                         case 7:
                             exit = true;
                             Console.WriteLine("Exiting the application. Goodbye!");

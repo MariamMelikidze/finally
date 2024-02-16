@@ -40,32 +40,22 @@ namespace JSON
                     return;
                 }
 
-                // Read existing JSON content
                 string jsonString = File.ReadAllText(filePath);
                 testclass testClass = JsonConvert.DeserializeObject<testclass>(jsonString);
-
-                // Add the deposit amount to the current balance
                 testClass.amount += depositAmount;
-
-                // Create a new Transaction object for the deposit
                 Transaction depositTransaction = new Transaction
                 {
-                    TransactionDate = DateTime.Now.ToString("yyyy-MM-dd"), // Set transaction date to current date
-                    TransactionType = "Deposit", // Set transaction type to deposit
-                    Amount = depositAmount, // Set the deposit amount
-                    AmountUSD = 0, // If needed, set other currency amounts
+                    TransactionDate = DateTime.Now.ToString("yyyy-MM-dd"), 
+                    TransactionType = "Deposit",
+                    Amount = depositAmount, 
+                    AmountUSD = 0, 
                     AmountEUR = 0
                 };
+                testClass.Amount += depositAmount;
 
-                // Add the deposit transaction to the transaction history list
                 testClass.TransactionHistory.Add(depositTransaction);
-
-                // Serialize the updated testClass object back to JSON
                 string updatedJsonString = JsonConvert.SerializeObject(testClass, Formatting.Indented);
-
-                // Write the updated JSON string to the file, overwriting the existing content
                 File.WriteAllText(filePath, updatedJsonString);
-
                 Console.WriteLine("Deposit successful.");
             }
             catch (FileNotFoundException ex)

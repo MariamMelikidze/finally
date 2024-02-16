@@ -6,24 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using Newtonsoft.Json;
-using Serilog;
 
 namespace JSON
 {
     internal class TheUser_sLastFiveOperations
     {
-        
-
         public static void Last5OperationsForMultipleFiles(string[] filePaths)
         {
             try
             {
-
                 List<Transaction> allTransactions = new List<Transaction>();
 
                 foreach (string filePath in filePaths)
@@ -37,13 +28,10 @@ namespace JSON
                     string jsonString = File.ReadAllText(filePath);
                     testclass testClass = JsonConvert.DeserializeObject<testclass>(jsonString);
 
-                    if (testClass.TransactionHistory == null || testClass.TransactionHistory.Count == 0)
+                    if (testClass.TransactionHistory != null)
                     {
-                        Console.WriteLine($"No transaction history found in file: {filePath}");
-                        continue;
+                        allTransactions.AddRange(testClass.TransactionHistory);
                     }
-
-                    allTransactions.AddRange(testClass.TransactionHistory);
                 }
 
                 if (allTransactions.Count == 0)
@@ -52,18 +40,34 @@ namespace JSON
                     return;
                 }
 
-                // Sort all transactions by date in descending order
                 var sortedTransactions = allTransactions.OrderByDescending(t => t.TransactionDate);
-
-                // Take the first five transactions
                 var lastFiveTransactions = sortedTransactions.Take(5);
 
-                Console.WriteLine("Last 5 transactions :");
+                Console.WriteLine("Last 5 transactions:");
                 foreach (var transaction in lastFiveTransactions)
                 {
                     Console.WriteLine($"Date: {transaction.TransactionDate}, Type: {transaction.TransactionType}, Amount: {transaction.Amount}");
                 }
 
+                // Update the transaction history in each file with the current transactions
+                foreach (string filePath in filePaths)
+                {
+                    if (File.Exists(filePath))
+                    {
+                        string jsonString = File.ReadAllText(filePath);
+                        testclass testClass = JsonConvert.DeserializeObject<testclass>(jsonString);
+
+                        // Append new transactions to the existing transaction history
+                        if (testClass.TransactionHistory == null)
+                        {
+                            testClass.TransactionHistory = new List<Transaction>();
+                        }
+                        testClass.TransactionHistory.AddRange(allTransactions);
+
+                        string updatedJsonString = JsonConvert.SerializeObject(testClass, Formatting.Indented);
+                        File.WriteAllText(filePath, updatedJsonString);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -72,4 +76,5 @@ namespace JSON
         }
     }
 }
+
 
