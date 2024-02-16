@@ -1,0 +1,3 @@
+2024-02-16 07:48:50.801 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-16 07:48:50.946 -08:00 [INF] Hosting environment: Production
+2024-02-16 07:48:50.950 -08:00 [INF] Content root path: C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net8.0

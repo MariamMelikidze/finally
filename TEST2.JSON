@@ -1,0 +1,127 @@
+{
+  "Amount": 10,
+  "Firstname": "Dante",
+  "Lastname": "Aligieri",
+  "CardDetails": {
+    "CardNumber": 12345678,
+    "ExpirationDate": "2025-12-01T00:00:00",
+    "CVC": "123"
+  },
+  "Pincode": null,
+  "TransactionHistory": [
+    {
+      "TransactionDate": "",
+      "TransactionType": "",
+      "Amount": 20,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-15",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-15",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-15",
+      "TransactionType": "Deposit",
+      "Amount": 15,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 40,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 25,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 70,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 345,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-16",
+      "TransactionType": "Deposit",
+      "Amount": 30,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    }
+  ],
+  "CVC": 0,
+  "PIN": 0
+}

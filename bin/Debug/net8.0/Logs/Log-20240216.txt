@@ -1,0 +1,16 @@
+2024-02-16 06:46:58.162 -08:00  INF  Enter your card number: 
+2024-02-16 06:47:03.387 -08:00  INF  The card is valid.
+2024-02-16 06:47:03.390 -08:00  INF  Enter your CVC: 
+2024-02-16 06:47:05.047 -08:00  INF  You have been successfully verified!
+2024-02-16 06:50:13.396 -08:00  INF  Enter your card number: 
+2024-02-16 06:50:20.541 -08:00  INF  The card is valid.
+2024-02-16 06:50:20.545 -08:00  INF  Enter your CVC: 
+2024-02-16 06:50:22.591 -08:00  INF  You have been successfully verified!
+2024-02-16 06:58:22.363 -08:00  INF  Enter your card number: 
+2024-02-16 06:58:26.596 -08:00  WRN  Invalid card number. Try again.
+2024-02-16 07:06:28.813 -08:00  INF  Application started. Press Ctrl+C to shut down.
+2024-02-16 07:06:28.915 -08:00  INF  Hosting environment: Production
+2024-02-16 07:06:28.920 -08:00  INF  Content root path: C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net8.0
+2024-02-16 07:07:50.455 -08:00  INF  Application started. Press Ctrl+C to shut down.
+2024-02-16 07:07:50.549 -08:00  INF  Hosting environment: Production
+2024-02-16 07:07:50.552 -08:00  INF  Content root path: C:\Users\us store plus\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net8.0

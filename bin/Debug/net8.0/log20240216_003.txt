@@ -1,0 +1,8 @@
+2024-02-16 06:32:05.558 -08:00 [INF] Withdrawal process started.
+2024-02-16 06:32:09.520 -08:00 [WRN] Attempted to withdraw more than the available balance.
+2024-02-16 06:42:45.981 -08:00 [INF] PIN change process started.
+2024-02-16 06:42:51.699 -08:00 [INF] PIN updated successfully.
+2024-02-16 06:47:07.946 -08:00 [INF] PIN change process started.
+2024-02-16 06:47:14.531 -08:00 [INF] PIN updated successfully.
+2024-02-16 06:50:24.976 -08:00 [INF] Starting deposit process.
+2024-02-16 06:50:26.778 -08:00 [INF] Deposit successful.

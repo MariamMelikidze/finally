@@ -1,0 +1,29 @@
+{
+  "Amount": 0,
+  "Firstname": "Dante",
+  "Lastname": "Aligieri",
+  "CardDetails": {
+    "CardNumber": 12345678,
+    "ExpirationDate": "2025-12-01T00:00:00",
+    "CVC": "123"
+  },
+  "Pincode": null,
+  "TransactionHistory": [
+    {
+      "TransactionDate": "",
+      "TransactionType": "",
+      "Amount": 20,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    },
+    {
+      "TransactionDate": "2024-02-15",
+      "TransactionType": "Withdrawal",
+      "Amount": 10,
+      "AmountUSD": 0,
+      "AmountEUR": 0
+    }
+  ],
+  "CVC": 0,
+  "PIN": 0
+}
